@@ -1,16 +1,844 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Operation Lone Star | Advocacy</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+  <body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Navigation -->
+    <nav id="header" class="fixed w-full z-10 top-0 bg-blue-900 shadow">
+      <div
+        class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-3"
+      >
+        <div class="pl-4">
+          <a
+            class="text-white text-2xl font-bold no-underline hover:text-gray-200 hover:no-underline"
+            href="#"
+          >
+            Operation Lone Star
+          </a>
+        </div>
+        <div class="block lg:hidden pr-4">
+          <button
+            id="nav-toggle"
+            class="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white"
+          >
+            <svg
+              class="fill-current h-3 w-3"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0"
+          id="nav-content"
+        >
+          <ul class="list-reset lg:flex justify-end flex-1 items-center">
+            <li class="mr-3">
+              <a
+                class="inline-block py-2 px-4 text-white font-bold hover:text-gray-200"
+                href="#policy-impact"
+                >About</a
+              >
+            </li>
+            <li class="mr-3">
+              <a
+                class="inline-block py-2 px-4 text-white font-bold hover:text-gray-200"
+                href="#testimonies"
+                >Testimonies</a
+              >
+            </li>
+            <li class="mr-3">
+              <a
+                class="inline-block py-2 px-4 text-white font-bold hover:text-gray-200"
+                href="#resources"
+                >Resources</a
+              >
+            </li>
+            <li class="mr-3">
+              <a
+                class="inline-block py-2 px-4 text-white font-bold hover:text-gray-200"
+                href="#share-section"
+                ><i class="fas fa-share-alt mr-1"></i>Share</a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-block py-2 px-6 text-white bg-red-600 font-bold rounded-lg shadow-md hover:bg-red-700 hover:shadow-lg transition duration-300"
+                href="#share-section"
+                >Take Action</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<body>
-  Hello world
-  <script src="script.js"></script>
-</body>
+    <!-- Full-Screen Video Hero Section -->
+    <section class="video-section">
+      <video id="hero-video" autoplay muted loop playsinline>
+        <source
+          src="Operation Lone Star - Background Video.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+      <button id="mute-toggle" class="mute-toggle" aria-label="Toggle sound">
+        <i class="fas fa-volume-mute"></i>
+      </button>
 
+      <!-- Overlay Text -->
+      <div class="video-overlay">
+        <h1
+          class="headline-impact text-5xl md:text-6xl font-bold mb-6 leading-tight"
+        >
+          A BORDER CRACKDOWN OR A $11 BILLION
+          <span class="glitch" data-text="SCAM?">SCAM?</span>
+        </h1>
+        <a
+          href="#share-section"
+          class="cta-button text-white font-bold py-4 px-10 text-xl rounded-lg shadow-xl transition duration-300 shake-on-hover"
+          >EXPOSE THE TRUTH</a
+        >
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <span>Scroll to learn more ↓</span>
+      </div>
+    </section>
+
+    <!-- Financial Breakdown Section with Name and Shame Approach -->
+    <section
+      id="financial-breakdown"
+      class="py-16 bg-gray-900 relative overflow-hidden"
+      style="position: relative; z-index: 5; margin-top: 0"
+    >
+      <!-- Background Image -->
+      <div class="money-fall">
+        <img
+          src="./operation-lone-star-impact.jpg"
+          alt="Money falling over Texas border, representing waste"
+        />
+      </div>
+
+      <div class="container mx-auto px-4 relative z-20">
+        <h2 class="waste-header text-4xl font-bold text-center mb-8 text-white">
+          THE $11 BILLION <span class="text-red-500">WASTE</span>
+        </h2>
+        <!-- Governor Section -->
+        <div class="governor-section">
+          <div class="image-container">
+            <img
+              src="./governor-greg-abbott.png"
+              alt="Governor Greg Abbott"
+              class="governor-image"
+              onerror="this.onerror=null; this.src='Governor Greg Abbott.png'; console.log('Image failed to load, using fallback');"
+            />
+
+            <div class="image-overlay"></div>
+          </div>
+
+          <!-- Move Bio Box OUTSIDE .image-container -->
+          <div class="bio-box">
+            <strong>Greg Abbott</strong> <br />
+            Governor of Texas since 2015 <br />
+            **Led Operation Lone Star**, diverting **$11 Billion** <br />
+            away from healthcare & education. <br />
+            **Accused of militarizing the border** for political gain.
+          </div>
+
+          <div class="governor-overlay">
+            <p class="callout">"$11 BILLION WASTED—TEXANS LEFT BEHIND"</p>
+            <p class="subcallout">While Texans struggle with basic needs</p>
+          </div>
+        </div>
+
+        <!-- Financial Breakdown Graph -->
+        <div class="funding-breakdown">
+          <p class="funding-title">Where Could the $11 Billion Have Gone?</p>
+
+          <div class="invoice expenditure-report">
+            <div class="invoice-header">
+              <div class="invoice-logo">
+                <i class="fas fa-star-of-life"></i> STATE OF TEXAS
+              </div>
+              <div class="invoice-title">EXPENDITURE REPORT</div>
+            </div>
+
+            <div id="waste-counter" class="waste-counter">$0</div>
+
+            <table class="invoice-table">
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="misused-row">
+                  <td>Operation Lone Star</td>
+                  <td>$11 Billion</td>
+                  <td><span class="misused">🚨 MISUSED FUNDS</span></td>
+                </tr>
+                <tr class="denied-row">
+                  <td>Fix Texas Power Grid</td>
+                  <td>$6 Billion</td>
+                  <td><span class="denied">❌ DENIED</span></td>
+                </tr>
+                <tr class="denied-row">
+                  <td>Free School Meals (2 Years)</td>
+                  <td>$5 Billion</td>
+                  <td><span class="denied">❌ DENIED</span></td>
+                </tr>
+                <tr class="denied-row">
+                  <td>Expand Rural Healthcare</td>
+                  <td>$8 Billion</td>
+                  <td><span class="denied">❌ DENIED</span></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="invoice-footer">
+              <div class="invoice-signature">Greg Abbott</div>
+              <div class="invoice-date">Fiscal Year 2021-2023</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Policy, Impact & Critique Section -->
+    <section id="policy-impact" class="py-16 bg-gray-900 text-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-5xl font-bold text-center mb-12 policy-title">
+          💰 $11 Billion Later: What’s Wrong with Operation Lone Star?
+        </h2>
+
+        <!-- Introductory Overview -->
+        <div class="overview-section mb-16">
+          <div class="flex flex-col lg:flex-row gap-8">
+            <div class="lg:w-1/2">
+              <h3 class="text-3xl font-bold mb-6">
+                What is Operation Lone Star?
+              </h3>
+              <p class="text-lg mb-6 leading-relaxed">
+                Operation Lone Star (OLS) was launched by Texas Governor Greg
+                Abbott in March 2021. It deploys law enforcement resources to
+                the Texas-Mexico border, ostensibly to address border crossing
+                and smuggling.
+              </p>
+              <p class="text-lg mb-6 leading-relaxed">
+                The operation has drawn criticism for its militarized approach,
+                constitutional concerns, and humanitarian impacts on migrants
+                and border communities.
+              </p>
+              <p class="text-lg leading-relaxed">
+                With a price tag exceeding $11 billion and counting, many are
+                questioning whether this massive expenditure is producing any
+                meaningful results beyond political theatrics.
+              </p>
+              <!-- Highlighted Statistic -->
+              <div
+                class="bg-red-600 text-white font-bold text-2xl p-6 mt-6 rounded-lg shadow-lg text-center"
+              >
+                Texas has spent more on Operation Lone Star than the annual
+                budgets of <strong>20 U.S. states</strong>.
+                <span class="block text-sm font-light mt-2"
+                  >Source: U.S. Census Bureau, Texas State Budget Reports</span
+                >
+              </div>
+            </div>
+            <!-- Image & Caption -->
+            <div class="lg:w-1/2">
+              <figure>
+                <img
+                  class="w-full h-full object-cover rounded-lg shadow-2xl"
+                  src="./operation-lone-star.jpeg"
+                  alt="Texas National Guard officer overseeing migrants near Eagle Pass, Texas."
+                />
+                <figcaption class="image-caption">
+                  A National Guard officer monitors migrants at the Rio Grande
+                  near Eagle Pass, Texas, as part of Operation Lone Star. The
+                  initiative, launched by Texas Governor Greg Abbott, aims to
+                  block illegal crossings but has faced legal and humanitarian
+                  criticism. <br /><span class="font-light"
+                    >(Source: Texas Military Department, Facebook, June 5,
+                    2024.)</span
+                  >
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <!-- Legal & Human Rights Concerns -->
+        <div class="concerns-section mb-16">
+          <h3 class="text-3xl font-bold mb-8 text-center">
+            Legal & Human Rights Concerns
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="concern-card">
+              <div class="icon-wrapper mb-4">
+                <i class="fas fa-balance-scale text-3xl text-red-500"></i>
+              </div>
+              <h4 class="text-xl font-bold mb-4">Constitutional Violations</h4>
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <i
+                    class="fas fa-exclamation-circle text-red-500 mr-2 mt-1"
+                  ></i>
+                  <span
+                    >80% of arrests target U.S. citizens, raising serious
+                    constitutional concerns</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i
+                    class="fas fa-exclamation-circle text-red-500 mr-2 mt-1"
+                  ></i>
+                  <span>Multiple federal law violations reported</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="concern-card">
+              <div class="icon-wrapper mb-4">
+                <i class="fas fa-heart-broken text-3xl text-red-500"></i>
+              </div>
+              <h4 class="text-xl font-bold mb-4">Humanitarian Crisis</h4>
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <i
+                    class="fas fa-exclamation-circle text-red-500 mr-2 mt-1"
+                  ></i>
+                  <span
+                    >Family separations and indefinite detentions
+                    documented</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <i
+                    class="fas fa-exclamation-circle text-red-500 mr-2 mt-1"
+                  ></i>
+                  <span>Inadequate medical care in detention facilities</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="concern-card">
+              <div class="icon-wrapper mb-4">
+                <i class="fas fa-gavel text-3xl text-red-500"></i>
+              </div>
+              <h4 class="text-xl font-bold mb-4">Legal Challenges</h4>
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <i
+                    class="fas fa-exclamation-circle text-red-500 mr-2 mt-1"
+                  ></i>
+                  <span>Multiple lawsuits citing civil rights violations</span>
+                </li>
+                <li class="flex items-start">
+                  <i
+                    class="fas fa-exclamation-circle text-red-500 mr-2 mt-1"
+                  ></i>
+                  <span
+                    >Challenges to state overreach in federal jurisdiction</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Financial Costs & Recommendations -->
+        <div class="costs-recommendations-section">
+          <div class="costs-section mb-12">
+            <h3 class="text-3xl font-bold mb-8 text-center">
+              Financial Impact & Policy Recommendations
+            </h3>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div class="cost-impact p-8 bg-gray-800 rounded-lg">
+                <h4 class="text-2xl font-bold mb-4 text-red-500">
+                  $11 Billion Taxpayer Cost
+                </h4>
+                <p class="text-lg mb-4">
+                  This massive expenditure has diverted crucial resources from:
+                </p>
+                <ul class="space-y-2">
+                  <li class="flex items-center">
+                    <i class="fas fa-times-circle text-red-500 mr-2"></i>
+                    <span>Public Education Improvements</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-times-circle text-red-500 mr-2"></i>
+                    <span>Healthcare Infrastructure</span>
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fas fa-times-circle text-red-500 mr-2"></i>
+                    <span>Critical State Services</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="recommendations p-8 bg-gray-800 rounded-lg">
+                <h4 class="text-2xl font-bold mb-4 text-blue-400">
+                  Policy Recommendations
+                </h4>
+                <ul class="space-y-4">
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-blue-400 mr-2 mt-1"></i>
+                    <span
+                      >Redirect funding toward community-based crime prevention
+                      programs</span
+                    >
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-blue-400 mr-2 mt-1"></i>
+                    <span
+                      >Invest in asylum processing and immigration courts</span
+                    >
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-blue-400 mr-2 mt-1"></i>
+                    <span
+                      >Expand humanitarian relief efforts and legal aid</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-8">
+            <a
+              href="#share-section"
+              class="cta-button inline-block text-white font-bold py-4 px-8 rounded-lg bg-red-600 hover:bg-red-700 transition duration-300"
+            >
+              TAKE ACTION NOW
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonies Section -->
+    <section id="testimonies" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-4">
+          Behind the Uniform: Real Stories
+        </h2>
+        <p class="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+          Hear from those directly impacted by Operation Lone Star
+        </p>
+        <div class="testimonial-slider">
+          <div class="testimonial-slide active">
+            <div
+              class="bg-white p-8 rounded-lg shadow-md max-w-3xl mx-auto border-l-4 border-red-500"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-16 h-16 bg-gray-300 rounded-full mr-4 flex items-center justify-center"
+                >
+                  <i class="fas fa-user-shield text-gray-500 text-3xl"></i>
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold">Anonymous</h4>
+                  <p class="text-gray-600">TX National Guard Trooper</p>
+                </div>
+              </div>
+              <p class="text-gray-800 text-lg italic">
+                "I was deployed to the border with no clear mission. We were
+                understaffed, under-equipped, and constantly changing
+                objectives. It's a political stunt that's wasting taxpayer money
+                and our time."
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div
+              class="bg-white p-8 rounded-lg shadow-md max-w-3xl mx-auto border-l-4 border-red-500"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-16 h-16 bg-gray-300 rounded-full mr-4 flex items-center justify-center"
+                >
+                  <i class="fas fa-user-alt text-gray-500 text-3xl"></i>
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold">DPS Officer</h4>
+                  <p class="text-gray-600">Texas Department of Public Safety</p>
+                </div>
+              </div>
+              <p class="text-gray-800 text-lg italic">
+                "We were told to block migrants, but some were drowning. We
+                couldn't help them. The orders conflicted with our training to
+                protect human life. I've never felt more torn between my duty
+                and my humanity."
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div
+              class="bg-white p-8 rounded-lg shadow-md max-w-3xl mx-auto border-l-4 border-red-500"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-16 h-16 bg-gray-300 rounded-full mr-4 flex items-center justify-center"
+                >
+                  <i class="fas fa-home text-gray-500 text-3xl"></i>
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold">Maria L.</h4>
+                  <p class="text-gray-600">Border Community Resident</p>
+                </div>
+              </div>
+              <p class="text-gray-800 text-lg italic">
+                "Our community has become militarized overnight. The constant
+                presence of armed officers has changed the feeling of our town.
+                Neighbors are afraid to go out, businesses are suffering, and
+                the atmosphere of fear is palpable."
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center mt-6">
+          <button class="testimonial-dot active" data-index="0"></button>
+          <button class="testimonial-dot" data-index="1"></button>
+          <button class="testimonial-dot" data-index="2"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
+          Advocacy Resources
+        </h2>
+        <p class="spread-awareness-tagline text-center">
+          Spread Awareness. Create Change.
+        </p>
+
+        <!-- Social Media Toolkit -->
+        <div id="share-section" class="mb-16">
+          <h3 class="text-3xl font-bold text-center mb-8">
+            Social Media Toolkit
+          </h3>
+          <div class="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
+            <!-- Pre-written Posts Section -->
+            <div class="mt-8">
+              <h4 class="text-2xl font-bold mb-8 text-center">
+                Ready-to-Share Posts
+              </h4>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- X Card -->
+                <div
+                  class="post-template bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  <div class="flex items-center mb-4">
+                    <span class="text-black text-2xl mr-3">𝕏</span>
+                    <h5 class="font-bold text-gray-800">X</h5>
+                  </div>
+                  <p class="text-gray-700 mb-4">
+                    "$11B wasted on Operation Lone Star while Texas schools lack
+                    funding. Time for change! #StopOLS #InvestInTexas"
+                  </p>
+                  <button
+                    class="w-full bg-black text-white font-bold py-3 px-4 rounded-lg hover:bg-zinc-800 transition transform hover:scale-105 shadow share-button mb-4"
+                    style="color: white !important"
+                  >
+                    SHARE NOW
+                  </button>
+                  <a
+                    href="#"
+                    data-download="x-pack"
+                    class="block text-center text-sm text-gray-600 hover:text-gray-800"
+                  >
+                    <i class="fas fa-download mr-1"></i> Download X Pack
+                  </a>
+                </div>
+
+                <!-- Instagram Card -->
+                <div
+                  class="post-template bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  <div class="flex items-center mb-4">
+                    <i
+                      class="fab fa-instagram text-purple-500 text-2xl mr-3"
+                    ></i>
+                    <h5 class="font-bold text-gray-800">Instagram</h5>
+                  </div>
+                  <p class="text-gray-700 mb-4">
+                    Share powerful visuals exposing the truth about Operation
+                    Lone Star's $11B waste. Make your voice heard! 📢
+                    #BorderJustice
+                  </p>
+                  <button
+                    class="w-full bg-purple-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-purple-600 transition transform hover:scale-105 shadow share-button mb-4"
+                  >
+                    SHARE NOW
+                  </button>
+                  <a
+                    href="#"
+                    data-download="instagram-pack"
+                    class="block text-center text-sm text-purple-600 hover:text-purple-800"
+                  >
+                    <i class="fas fa-download mr-1"></i> Download Instagram Pack
+                  </a>
+                </div>
+
+                <!-- Facebook Card -->
+                <div
+                  class="post-template bg-gradient-to-br from-blue-50 to-blue-200 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  <div class="flex items-center mb-4">
+                    <i class="fab fa-facebook text-blue-600 text-2xl mr-3"></i>
+                    <h5 class="font-bold text-gray-800">Facebook</h5>
+                  </div>
+                  <p class="text-gray-700 mb-4">
+                    EXPOSED: Operation Lone Star has spent $11 billion of
+                    taxpayer money, with 80% of arrests being US citizens.
+                  </p>
+                  <button
+                    class="w-full bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-700 transition transform hover:scale-105 shadow share-button mb-4"
+                  >
+                    SHARE NOW
+                  </button>
+                  <a
+                    href="#"
+                    data-download="facebook-pack"
+                    class="block text-center text-sm text-blue-600 hover:text-blue-800"
+                  >
+                    <i class="fas fa-download mr-1"></i> Download Facebook Pack
+                  </a>
+                </div>
+
+                <!-- TikTok Card -->
+                <div
+                  class="post-template bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  <div class="flex items-center mb-4">
+                    <i class="fab fa-tiktok text-gray-800 text-2xl mr-3"></i>
+                    <h5 class="font-bold text-gray-800">TikTok</h5>
+                  </div>
+                  <p class="text-gray-700 mb-4">
+                    Create a powerful TikTok exposing how $11B of your tax money
+                    is being wasted on Operation Lone Star! 🎥 #TruthMatters
+                  </p>
+                  <button
+                    class="w-full bg-pink-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-pink-600 transition transform hover:scale-105 shadow share-button mb-4"
+                  >
+                    SHARE NOW
+                  </button>
+                  <a
+                    href="#"
+                    data-download="tiktok-pack"
+                    class="block text-center text-sm text-pink-600 hover:text-pink-800"
+                  >
+                    <i class="fas fa-download mr-1"></i> Download TikTok Pack
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center mt-12">
+              <button
+                class="download-toolkit bg-red-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-red-700 hover:shadow-xl transition duration-300"
+              >
+                <i class="fas fa-download mr-2"></i> Download Complete Toolkit
+              </button>
+              <p class="mt-4 text-sm text-gray-500">
+                Available in PDF, PPT, and ZIP formats. No email required.
+              </p>
+            </div>
+
+            <!-- Advocacy Letters Integration -->
+            <div class="mt-12 border-t pt-8">
+              <h4 class="text-2xl font-bold mb-6 text-center">
+                Advocacy Letter Templates
+              </h4>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                  <h5 class="font-bold mb-3">Letter to Representatives</h5>
+                  <p class="text-sm text-gray-600 mb-4">
+                    Template for contacting state officials about Operation Lone
+                    Star.
+                  </p>
+                  <a
+                    href="#"
+                    class="text-blue-600 hover:text-blue-800 flex items-center"
+                  >
+                    <i class="fas fa-download mr-2"></i> Download Template
+                  </a>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                  <h5 class="font-bold mb-3">Media Pitch Template</h5>
+                  <p class="text-sm text-gray-600 mb-4">
+                    Ready-to-use template for pitching stories to news outlets.
+                  </p>
+                  <a
+                    href="#"
+                    class="text-blue-600 hover:text-blue-800 flex items-center"
+                  >
+                    <i class="fas fa-download mr-2"></i> Download Template
+                  </a>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                  <h5 class="font-bold mb-3">Community Outreach</h5>
+                  <p class="text-sm text-gray-600 mb-4">
+                    Template for building local coalition support.
+                  </p>
+                  <a
+                    href="#"
+                    class="text-blue-600 hover:text-blue-800 flex items-center"
+                  >
+                    <i class="fas fa-download mr-2"></i> Download Template
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Closes Social Media Toolkit -->
+        </div>
+        <!-- Closes #share-section -->
+      </div>
+      <!-- Closes .container -->
+    </section>
+    <!-- Closes #resources -->
+
+    <!-- Works Cited Section -->
+    <section id="works-cited" class="py-12 bg-gray-900 text-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Works Cited</h2>
+        <div class="max-w-4xl mx-auto">
+          <ul class="citation-list">
+            <li>
+              Texas Civil Rights Project.
+              <em>Operation Lone Star and Constitutional Overreach</em>. 2023.
+              <a
+                href="https://texascivilrightsproject.org/ols-report"
+                class="citation-link"
+              >
+                https://texascivilrightsproject.org/ols-report
+              </a>
+            </li>
+            <li>
+              American Civil Liberties Union.
+              <em>Legal Challenges to State Immigration Enforcement</em>. 2024.
+              <a
+                href="https://aclu.org/immigration/state-enforcement"
+                class="citation-link"
+              >
+                https://aclu.org/immigration/state-enforcement
+              </a>
+            </li>
+            <li>
+              Government Accountability Office.
+              <em>Federal and State Jurisdiction in Immigration Law</em>. 2023.
+              <a
+                href="https://gao.gov/reports/immigration"
+                class="citation-link"
+              >
+                https://gao.gov/reports/immigration
+              </a>
+            </li>
+            <li>
+              Investigative Journalism Reports.
+              <em>Human Rights Violations Under Operation Lone Star</em>. 2024.
+              <a
+                href="https://propublica.org/ols-investigation"
+                class="citation-link"
+              >
+                https://propublica.org/ols-investigation
+              </a>
+            </li>
+            <li>
+              Texas Legislative Budget Board.
+              <em>Operation Lone Star Spending Report</em>. 2024.
+              <a
+                href="https://lbb.texas.gov/ols-spending"
+                class="citation-link"
+              >
+                https://lbb.texas.gov/ols-spending
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+      <div class="container mx-auto px-4 py-8">
+        <div class="footer-grid">
+          <div class="footer-main">
+            <h3 class="footer-title">LAWGEN 118Q - SOCIAL MEDIA TOOLKIT</h3>
+            <p class="footer-description">
+              This website serves as a social media toolkit designed to
+              critically analyze and inform audiences about Operation Lone Star.
+              The goal is to provide well-researched, legally grounded insights
+              into its implications on policy, human rights, and resource
+              allocation.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h3 class="footer-title">QUICK LINKS</h3>
+            <ul class="footer-nav">
+              <li><a href="#policy-impact">About</a></li>
+              <li><a href="#testimonies">Testimonies</a></li>
+              <li><a href="#resources">Resources</a></li>
+              <li><a href="#works-cited">Works Cited</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h3 class="footer-title">CONTACT</h3>
+            <p class="contact-name">Gil Silva</p>
+            <a href="mailto:gilsilva@stanford.edu" class="contact-email"
+              >gilsilva@stanford.edu</a
+            >
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/gilsilvaa"
+                target="_blank"
+                title="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 LAWGEN 118Q Social Media Toolkit. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
