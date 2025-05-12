@@ -31,7 +31,7 @@ This site is built to **expose** and **visualize** the realities of **Operation 
    git push origin main
    ```
 
-## 📢 Get Involved  
+## Get Involved  
 This is an **open-source advocacy project**. If you want to contribute or have insights to add, feel free to open an issue or submit a pull request.  
 
-📩 **Questions? Ideas?** Reach out!  
+**Questions? Ideas?** Reach out!  
