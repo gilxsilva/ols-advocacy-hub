@@ -1,23 +1,23 @@
-# 🏡 OLS Advocacy Hub
+# OLS Advocacy Hub
 
 An interactive site providing insights into **Operation Lone Star's** financial and social impact. This project breaks down how billions of taxpayer dollars are allocated and the consequences of these policies.
 
-## 📌 About  
+## About  
 This site is built to **expose** and **visualize** the realities of **Operation Lone Star**, providing a clear breakdown of funding, human impact, and legal challenges. It serves as a **data-driven advocacy tool** to push for transparency and accountability.
 
-## 🚀 Features
-- **📊 Budget Breakdown:** Where the billions are going  
-- **👥 Human Impact Metrics:** The real cost of these policies  
-- **⚖️ Legal Challenges:** Cases brought against OLS  
-- **🎥 Interactive Visuals & Videos** to engage visitors  
-- **📣 Social Media Toolkit** to spread awareness  
+## Features
+- **Budget Breakdown:** Where the billions are going  
+- **Human Impact Metrics:** The real cost of these policies  
+- **Legal Challenges:** Cases brought against OLS  
+- **Interactive Visuals & Videos** to engage visitors  
+- **Social Media Toolkit** to spread awareness  
 
-## 🛠️ Tech Stack  
+## Tech Stack  
 - **HTML, CSS, JavaScript** (Frontend)  
 - **Chart.js** for data visualization  
 - **GitHub Pages** for deployment  
 
-## 🔧 Setup & Development  
+## Setup & Development  
 1. Clone the repo:  
    ```bash
    git clone https://github.com/gilxsilva/ols-advocacy-hub.git
